@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://use.typekit.net/okg7sbt.css">
+  </head>
+  <body>
+      <h1>Welcome to Sleep Tracker</h1>
+      <p class="text">
+        Choose an option:
+        </p>
+        <div class="option_container">
+        <button id="record_btn" class="btn">Record Sleep Data</button>
+        <button id="sleep_record" class="btn">See Sleep Records</button>
+      </div>
+
+        <div id="record_section">
+        <p class="text">
+          Select a day:
+          </p>
+          <select id="day_select">
+              <option value="monday">Monday</option>
+              <option value="tuesday">Tuesday</option>
+              <option value="wednesday">Wednesday</option>
+              <option value="thursday">Thursday</option>
+              <option value="friday">Friday</option>
+              <option value="saturday">Saturday</option>
+              <option value="sunday">Sunday</option>
+            </select>
+
+            <p class="text">
+              How many hours did you sleep?
+              </p>
+              <span id="value_output">8</span>
+              <input id="hours_slider" type="range" min="0" max="16">
+              <button id="submit_record" class="btn">Record</button>
+          </div>
+
+          <div id="sleep_record_list">
+            </div>
+
+        <script src="app.js"></script>
+
+    </body>
+</html>
